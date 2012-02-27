@@ -100,7 +100,7 @@ If you use Bash, or if you simply *can’t* include `zsh` because you’re writi
 
 You can leave labels populated with strings like `USER_INFO_LABEL_TITLE`, and same with buttons.  Just make sure you use a custom subclass.  Then, override `-awakeFromNib`, and say something like
 
-	self.text = NSLocalizedString(self.text, nil)
+	self.text = NSLocalizedString(self.text, nil);
 
 Or, if you like outlet collections and are not afraid of cobweb code:
 
