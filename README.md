@@ -51,7 +51,7 @@ C3PO does exactly that.  Under the hood, it does these things:
 	
 	Not convinced?  — how about that after fixing this issue (wasted two days that could be spent coding), you need a bunch of testers to go through every single locale you support, and all those you don’t but your users use, for *every release,* simply because *your UI is localized in the wrong way?*
 	
-	In the world of Xcode, **every single localized resource** for an app essentially vouches *the entire application* capable of working in a particular locale.  There is such thing as a fallback locale on iOS.
+	In the world of Xcode, **every single localized resource** for an app essentially vouches *the entire application* capable of working in a particular locale.  There is no such thing as a fallback locale on iOS.
 	
 	When your user is running the app, and the app is capable of dealing with the user’s locale, the app runs under that locale.  In our horror story, the user is Japanese, so the app runs in Japanese.  If something is not available in the `ja_JP` locale (for example, your XIBs), it’s not available.  `-[UINib nibWithName:bundle:]`, for example, throws an exception on this.
 	
@@ -96,7 +96,7 @@ If you use Bash, or if you simply *can’t* include `zsh` because you’re writi
 
 ###	Having XIBs localized 
 
-You can leave labels populated with strings like USER_INFO_LABEL_TITLE, and same with buttons.  Just make sure you use a custom subclass.  Then, override `-awakeFromNib`, and say something like
+You can leave labels populated with strings like `USER_INFO_LABEL_TITLE`, and same with buttons.  Just make sure you use a custom subclass.  Then, override `-awakeFromNib`, and say something like
 
 	self.text = NSLocalizedString(self.text, nil)
 
