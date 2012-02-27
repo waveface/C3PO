@@ -47,7 +47,7 @@ C3PO does exactly that.  Under the hood, it does these things:
 	
 	*	Since iOS frameworks are not available, the library does not provide its own bundle, and you’re good, faithful and generally in a hurry, you put the whole thing right into the project.
 	
-	Now you get angry letters from German and Japanese users.  The app don’t even run for them.
+	Now you get angry letters from German and Japanese users.  The app doesn’t even run for them.
 	
 	Not convinced?  — how about that after fixing this issue (wasted two days that could be spent coding), you need a bunch of testers to go through every single locale you support, and all those you don’t but your users use, for *every release,* simply because *your UI is localized in the wrong way?*
 	
