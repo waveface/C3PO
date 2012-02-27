@@ -32,6 +32,8 @@ C3PO does exactly that.  Under the hood, it does these things:
 				return nil;
 			
 			self.title = NSLocalizedString(@"USERS_LIST_TITLE", @"Title for users list");
+			
+			return self;
 		
 		}
 
