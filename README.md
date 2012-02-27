@@ -105,9 +105,18 @@ Or, if you like outlet collections and are not afraid of cobweb code:
 	for (UILabel *aLabel in self.interfaceLabels)
 		aLabel.text = NSLocalizedString(aLabel.text, @"C3PO Localized");
 
-This can be dynamically injected into the class hierarchies in a later release, but it’s eight in the morning, I haven’t slept, and my train departs at 13:00, so we’ll leave this for the next release. 
+This can be dynamically injected into the class hierarchies in a later release, but it’s eight in the morning, I haven’t slept yet, and my train departs at 13:00, so we’ll leave this for the next release. 
 
 Time to take your app to the world.
+
+##	FAQ
+
+###	`Localized.strings` now shows up as a binary file
+
+Use an [Attributes file](http://progit.org/book/ch7-2.html) — `.gitattributes`, and say:
+
+	*.strings text diff
+
 
 ##	Credits
 
