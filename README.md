@@ -107,9 +107,7 @@ Or, if you like outlet collections and are not afraid of cobweb code:
 	for (UILabel *aLabel in self.interfaceLabels)
 		aLabel.text = NSLocalizedString(aLabel.text, @"C3PO Localized");
 
-This can be dynamically injected into the class hierarchies in a later release, but it’s eight in the morning, I haven’t slept yet, and my train departs at 13:00, so we’ll leave this for the next release. 
-
-Time to take your app to the world.
+This can be dynamically injected into the class hierarchies in a later release.  Time to take your app to the world.
 
 ##	FAQ
 
@@ -120,7 +118,8 @@ Use an [Attributes file](http://progit.org/book/ch7-2.html) — `.gitattributes`
 	*.strings text diff
 
 
-##	Credits
+##	Contributors
 
-*	[@jamex](http://twitter.com/james) wrote the entire project.
-*	[@evadne](http://twitter.com/evadne) forked this, revised README, added Bash stuff, and told a couple of stories.
+*	[João Moreno](http://joaomoreno.com)
+*	[Jamie Sa (@jamex)](http://twitter.com/james)
+*	[Evadne Wu (@evadne)](http://twitter.com/evadne)
