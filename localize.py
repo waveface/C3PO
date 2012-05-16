@@ -132,7 +132,7 @@ def export_xibs(language):
     # XIBs
     localization = open(language + os.path.sep + 'xib.strings.new', encoding='utf_16', mode='w+')
 
-    ibs = [name for name in os.listdir(os.getcwd()) if name.endswith('.xib') and not os.path.isdir(name)]
+    ibs = [name for name in os.listdir(os.getcwd()) if (name.endswith('.xib') or name.endswith('.storyboard')) and not os.path.isdir(name)]
 
     for ib in ibs:
         ib_strings = "en.lproj/" + ib + ".strings.new"
